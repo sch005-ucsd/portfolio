@@ -113,22 +113,147 @@ form button {
 
 /* ── Resume / CV ──────────────────────────────────────────────── */
 
-.resume-page section {
-  margin-block: 1.5em;
-}
-
-.resume-page section h2 {
-  border-bottom: 1px solid oklch(80% 3% 200);
-  padding-bottom: 0.25em;
-}
-
-.resume-page article header {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5em;
-  align-items: baseline;
-}
-
-.resume-page article h3 {
+/* Shrink h1 on the resume page — 400% is too large for a name header */
+.resume-page h1 {
+  font-size: 250%;
   margin: 0;
+}
+
+/* Full-width name / contact block at top */
+.resume-header {
+  text-align: center;
+  padding-block: 1em;
+  border-bottom: 3px solid var(--color-accent);
+  margin-bottom: 1.5em;
+}
+
+.resume-header .resume-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: oklch(45% 5% 250);
+  margin: 0.2em 0 0;
+}
+
+.resume-header .resume-contact {
+  font-size: 0.9rem;
+  color: oklch(50% 5% 250);
+  margin: 0.4em 0 0;
+}
+
+.resume-header a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.resume-header a:hover {
+  text-decoration: underline;
+}
+
+/* Two-column grid */
+.resume-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+  align-items: start;
+}
+
+@media (max-width: 55ch) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Sidebar ── */
+
+.resume-sidebar section {
+  margin-bottom: 1.5em;
+}
+
+.resume-sidebar h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  border-bottom: 1px solid oklch(88% 3% 200);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.6em;
+}
+
+.resume-sidebar ul {
+  padding-left: 1.2em;
+  margin: 0;
+}
+
+.resume-sidebar li {
+  margin-bottom: 0.2em;
+}
+
+/* ── Main timeline column ── */
+
+.resume-main section {
+  position: relative;
+  padding-left: 1.4em;
+  margin-bottom: 2em;
+}
+
+/* Vertical line running down the left of each section */
+.resume-main section::before {
+  content: '';
+  position: absolute;
+  left: 0.3em;
+  top: 2.2em;   /* starts below the h2 label */
+  bottom: 0.5em;
+  width: 2px;
+  background: oklch(88% 3% 200);
+}
+
+.resume-main h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-accent);
+  border-bottom: 1px solid oklch(88% 3% 200);
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+/* Each entry on the timeline */
+.resume-main article {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+/* Coloured dot on the timeline line */
+.resume-main article::before {
+  content: '';
+  position: absolute;
+  left: -1.1em;
+  top: 0.45em;
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 0 2px white, 0 0 0 3px var(--color-accent);
+}
+
+.resume-main article header {
+  margin-bottom: 0.4em;
+}
+
+.resume-main article header time {
+  font-size: 0.8rem;
+  color: oklch(55% 5% 250);
+  display: block;
+}
+
+.resume-main article h3 {
+  margin: 0.1em 0 0;
+  font-size: 1rem;
+}
+
+.resume-main article header p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: oklch(50% 5% 250);
+  font-style: italic;
 }
