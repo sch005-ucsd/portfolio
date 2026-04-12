@@ -19,7 +19,13 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
   margin-inline: auto;
+}
+
+.hero-image {
+  max-width: 60%;
+  border-radius: 8px;
 }
 
 /* ── Headings ─────────────────────────────────────────────────── */
