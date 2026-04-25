@@ -38,9 +38,9 @@ for (let p of pages) {
     nav.append(a);
 }
 
-// Dark mode switcher
-document.body.insertAdjacentHTML(
-    'afterbegin',
+// Dark mode switcher — placed inside nav so it sits at the right end
+nav.insertAdjacentHTML(
+    'beforeend',
     `<label class="color-scheme">
         Theme:
         <select>
@@ -81,6 +81,7 @@ export async function fetchJSON(url) {
 }
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+    if (!projects || !containerElement) return;
     containerElement.innerHTML = '';
     for (const project of projects) {
         const article = document.createElement('article');

@@ -77,11 +77,10 @@ nav a:hover {
 
 /* Dark mode switcher */
 .color-scheme {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  margin-left: auto;
   font-size: 80%;
   font-family: inherit;
+  align-self: center;
 }
 
 .color-scheme select {
