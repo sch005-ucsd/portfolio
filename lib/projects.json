@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Data Visualization Dashboard",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "An interactive dashboard built with D3.js that visualizes trends in climate data across multiple regions over the past century."
+    },
+    {
+        "title": "Machine Learning Classifier",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A supervised learning model trained on a dataset of 50,000 samples to classify handwritten digits with 98% accuracy."
+    },
+    {
+        "title": "SQL Database Analysis",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Exploratory data analysis of a large relational database using advanced SQL queries to uncover purchasing behavior patterns."
+    },
+    {
+        "title": "Web Scraping Pipeline",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A Python-based scraping pipeline that collects, cleans, and stores structured data from multiple e-commerce websites."
+    },
+    {
+        "title": "Natural Language Processing",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A sentiment analysis tool using transformer-based models to classify product reviews from Amazon into positive, neutral, or negative categories."
+    },
+    {
+        "title": "Geospatial Mapping Tool",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "An interactive map built with Leaflet.js that overlays census data with neighborhood-level income and education statistics."
+    },
+    {
+        "title": "Time Series Forecasting",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A forecasting model using ARIMA and Prophet to predict stock prices based on historical trading data."
+    },
+    {
+        "title": "Image Recognition App",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A convolutional neural network trained to identify plant diseases from leaf images with over 95% validation accuracy."
+    },
+    {
+        "title": "Recommendation System",
+        "year": "2023",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A collaborative filtering system that recommends movies to users based on their rating history and similarity to other users."
+    },
+    {
+        "title": "Statistical Inference Study",
+        "year": "2022",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A rigorous hypothesis testing project examining whether socioeconomic factors predict academic performance in California high schools."
+    },
+    {
+        "title": "Network Graph Analysis",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A graph-based analysis of social network connections using NetworkX to identify influential nodes and community structures."
+    },
+    {
+        "title": "A/B Testing Framework",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "A reusable A/B testing framework built in Python that automates experiment design, power calculations, and result reporting."
+    }
+]
