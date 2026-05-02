@@ -140,6 +140,100 @@ form button {
   object-fit: cover;
 }
 
+/* ── Project year label ───────────────────────────────────────── */
+
+.project-year {
+  margin: 0;
+  font-family: Baskerville, serif;
+  font-variant-numeric: oldstyle-nums;
+  color: oklch(55% 5% 250);
+  font-size: 0.85rem;
+}
+
+/* ── Pie chart SVG ────────────────────────────────────────────── */
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+  overflow: visible;
+  flex-shrink: 0;
+}
+
+#projects-pie-plot path {
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#projects-pie-plot:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+/* ── Selected wedge ───────────────────────────────────────────── */
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+
+/* ── Legend ───────────────────────────────────────────────────── */
+
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1em;
+  list-style: none;
+  padding: 0.75em;
+  margin: 0;
+  border: 1px solid oklch(88% 3% 200);
+  border-radius: 6px;
+  flex: 1;
+  align-content: start;
+}
+
+/* ── Legend item ──────────────────────────────────────────────── */
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+/* ── Color swatch ─────────────────────────────────────────────── */
+
+.swatch {
+  display: inline-block;
+  width: 1em;
+  aspect-ratio: 1 / 1;
+  background-color: var(--color);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Chart container ──────────────────────────────────────────── */
+
+.chart-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+
+/* ── Search bar ───────────────────────────────────────────────── */
+
+.searchBar {
+  display: block;
+  width: 100%;
+  padding: 0.5em 0.75em;
+  margin-block: 1em;
+  font: inherit;
+  border: 1px solid oklch(75% 5% 200);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
 /* ── Resume / CV ──────────────────────────────────────────────── */
 
 /* Shrink h1 on the resume page — 400% is too large for a name header */
